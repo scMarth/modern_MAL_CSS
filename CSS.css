@@ -262,7 +262,7 @@ a {
  */
 .header a {
     font-weight: bold;
-    color: #fff;
+    color:rgb(150,200,255);
 }
 .header a:hover {
     text-decoration: underline;
@@ -1002,7 +1002,7 @@ a {
 
 .list-table .list-table-data a.edit-disabled {
     cursor: text;
-    color: black;
+    color: white;
 }
 
 .list-table .list-table-data .tags .edit {
@@ -1152,9 +1152,11 @@ a.icon-watch{
 }
 
 a.link.hover_info, div#copyright, th.header-title.number,
-td.data.number, th.header-title.tags{
+td.data.number, th.header-title.tags, .add-edit-more{
     color:white;
 }
+
+
 
 
 /***********************************************************************
