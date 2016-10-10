@@ -227,7 +227,13 @@
  */
 
 body {
-    margin: 0 0 0 0;
+    /* Background image */
+    background-image: url("http://i.imgur.com/eylxuI6.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     text-align: center;
     font-family: Verdana, Arial;
     font-size: 11px;
