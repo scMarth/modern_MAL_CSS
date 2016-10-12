@@ -17,7 +17,7 @@
     -o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
     -ms-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
     box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
-    color: #323232;
+    color: #394269;
     text-align: left;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     z-index: 1101;
@@ -61,7 +61,7 @@
 
 #advanced-options select:disabled {
     background-image: url(/img/pc/ownlist/icon_pulldown_triangle_disable.png);
-    color: #9B9B9B;
+    color: #394269;
 }
 
 #advanced-options input[type=text] {
@@ -98,7 +98,7 @@
     padding: 5px 0px;
     border: #BEBEBE 1px solid;
     border-radius: 4px;
-    color: #323232;
+    color: #394269;
     font-size: 12px;
     text-align: center;
     cursor: pointer;
@@ -106,16 +106,16 @@
 #advanced-options .sort-widget input[type=radio]:checked + label {
     background-color: #4065BA;
     border: #4065BA 1px solid;
-    color: #FFFFFF;
+    color: #394269;
 }
 #advanced-options .sort-widget input[type=radio]:disabled + label {
     border: #BEBEBE 1px solid;
-    color: #9B9B9B;
+    color: #394269;
 }
 #advanced-options .sort-widget input[type=radio]:checked:disabled + label {
     background-color: #FFFFFF;
     border: #BEBEBE 1px solid;
-    color: #9B9B9B;
+    color: #394269;
 }
 
 /* filter */
@@ -194,14 +194,14 @@
 
 #advanced-options .btn-apply,
 #advanced-options .btn-clear {
-    background-color:rgba(150,200,255,0.5);
+    background-color:rgba(255,255,255,0.5);
     display: inline-block;
     width: 135px;
     margin: 0 4px;
     padding: 6px 0px;
     border-radius: 4px;
     font-size: 12px;
-    color: #FFFFFF;
+    color: #394269;
     text-align: center;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -219,7 +219,7 @@
 
 #advanced-options .btn-apply:hover,
 #advanced-options .btn-clear:hover {
-  background-color:rgba(150,200,255,0.5);
+  background-color:rgba(255,255,255,0.5);
 }
 
 
@@ -229,7 +229,7 @@
 
 body {
     /* Background image */
-    background-image: url("http://i.imgur.com/eylxuI6.jpg");
+    background-image: url("http://i.imgur.com/BUH5woS.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -245,20 +245,20 @@ td {
 }
 
 a {
-    color: #1d439b;
+    color: #394269;
     text-decoration: none;
 }
 
 #footer-block {
     padding: 15px 0;
     background-color: #2E51A2;
-    color: #FFFFFF;
+    color: #394269;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
 #copyright {
     font-size: 12px;
-    color: #9caed9;
+    color: #394269;
     padding-top: 3px;
     text-align: center;
 }
@@ -269,7 +269,7 @@ a {
  */
 .header a {
     font-weight: bold;
-    color:rgb(150,200,255);
+    color:#394269;
 }
 .header a:hover {
     text-decoration: underline;
@@ -277,18 +277,18 @@ a {
 
 .header {
     position: relative;
-    color: #fff;
+    color: #394269;
     display: block;
-    width: 75%;
-    margin-right: 12.5%; 
-    margin-left: 12.5%;
+    width: 50%;
+    /* margin-right: 12.5%; */
+    margin-left: 5%;
     height: 70px;
 }
 
 .header .header-title {
     position: absolute;
     top: 21px;
-    background-image: url("http://i.imgur.com/jUoSDpG.png");
+    background-image: url("http://i.imgur.com/ZHlGEYs.png");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: auto 36px;
@@ -342,7 +342,7 @@ a {
     display: block;
     width: 150px;
     height: 30px;
-    color: rgba(150,200,255,0.5);
+    color: rgba(255,255,255,0.5);
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
@@ -361,12 +361,12 @@ a {
 }
 
 .header .header-menu .list-menu .icon-menu:hover {
-    background-color:rgba(150,200,255,0.5);
+    background-color:rgba(255,255,255,0.5);
 }
 
 .header .header-menu .list-menu .icon-menu svg.icon {
     position: absolute;
-    fill: rgba(150,200,255,0.5);
+    fill: rgba(255,255,255,0.5);
     left: 12px;
     top: 4px;
 }
@@ -383,19 +383,23 @@ a {
 .list-menu-float {
     position: fixed;
     display: block;
-    top: 20%;
+    top: 40%;
+    right:0;
     width: 50px;
     border: #EBEBEB 1px solid;
-    z-index: 2
+    z-index: 2;
+    direction:rtl;
 }
 
 .list-menu-float .icon-menu {
     position: relative;
-    background-color:rgba(150,200,255,0.5);
+    right: 0;
+    background-color:rgba(255,255,255,0.5);
     display: block;
     width: 50px;
     height: 50px;
     opacity: 1;
+    /* direction: rtl; */
     -moz-transition-property: all;
     -o-transition-property: all;
     -webkit-transition-property: all;
@@ -409,17 +413,15 @@ a {
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
 }
-
 /* SVG */
 .list-menu-float .icon-menu svg.icon {
     position: absolute;
-    fill: #323232;
+    fill: #394269;
 }
 .list-menu-float .icon-menu:hover svg.icon {
     position: absolute;
-    fill: #ffffff;
-    background-color: rgb(150, 200, 255);
-
+    fill: #394269;
+    background-color: rgb(255,255,255);
 }
 
 .list-menu-float .icon-menu.profile {
@@ -428,56 +430,56 @@ a {
 
 .list-menu-float .icon-menu.quick-add {}
 .list-menu-float .icon-menu.quick-add svg.icon-quick-add {
-    fill: #ffffff;
+    fill: #394269;
     left: 13px;
     top: 12px;
 }
 
 .list-menu-float .icon-menu.anime-list {}
 .list-menu-float .icon-menu.anime-list svg.icon-anime-list {
-    fill: #ffffff;    
+    fill: #394269;    
     left: 13px;
     top: 12px;
 }
 
 .list-menu-float .icon-menu.manga-list {}
 .list-menu-float .icon-menu.manga-list svg.icon-manga-list {
-    fill: #ffffff;
+    fill: #394269;
     left: 13px;
     top: 12px;
 }
 
 .list-menu-float .icon-menu.history {}
 .list-menu-float .icon-menu.history svg.icon-history {
-    fill: #ffffff;
+    fill: #394269;
     left: 13px;
     top: 12px;
 }
 
 .list-menu-float .icon-menu.export {}
 .list-menu-float .icon-menu.export svg.icon-export {
-    fill: #ffffff;
+    fill: #394269;
     left: 13px;
     top: 12px;
 }
 
 .list-menu-float .icon-menu.login {}
 .list-menu-float .icon-menu.login svg.icon-login {
-    fill: #ffffff;
+    fill: #394269;
     left: 13px;
     top: 12px;
 }
 
 .list-menu-float .icon-menu.logout {}
 .list-menu-float .icon-menu.logout svg.icon-logout {
-    fill: #ffffff;
+    fill: #394269;
     left: 13px;
     top: 14px;
 }
 
 .list-menu-float .icon-menu.setting {}
 .list-menu-float .icon-menu.setting svg.icon-setting {
-    fill: #ffffff;
+    fill: #394269;
     left: 13px;
     top: 13px;
 }
@@ -488,7 +490,7 @@ a {
     left: 50px;
     width: 0;
     display: inline-block;
-    color: #ffffff;
+    color: #394269;
     font-size: 1.4em;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     text-align: center;
@@ -511,7 +513,7 @@ a {
 }
 
 .list-menu-float .icon-menu:not(.profile):hover {
-    background-color: rgb(150, 200, 255);
+    background-color: rgb(255,255,255);
     width: 145px;
 }
 
@@ -548,7 +550,7 @@ a {
 
 .list-menu-float .icon-menu.setting .text .link-list-setting,
 .list-menu-float .icon-menu.setting .text .link-style-setting {
-    background-color:rgb(150,200,255);
+    background-color:rgb(255,255,255);
     display: block;
     opacity: 0;
 }
@@ -556,13 +558,13 @@ a {
 .list-menu-float .icon-menu.setting:hover .text .link-list-setting,
 .list-menu-float .icon-menu.setting:hover .text .link-style-setting {
     position: absolute;
-    background-color:rgb(150,200,255);
+    background-color:rgb(255,255,255);
     display: block;
     width: 110px;
     height: 50px;
     line-height: 50px;
     text-decoration: none;
-    color: #ffffff;
+    color: #394269;
     opacity: 1;
 }
 
@@ -584,10 +586,10 @@ a {
     position: relative;
     background-color: #ffffff;
     border: #EBEBEB 1px solid;
-    width: 75%;
+    width: 50%;
     margin-bottom: 0;
-    margin-right: 12.5%;
-    margin-left: 12.5%;
+    /* margin-right: 12.5%; */
+    margin-left: 5%;
     text-align: left;
 }
 
@@ -629,7 +631,7 @@ a {
     padding: 8px;
     border: rgba(255,255,255,0) 1px solid;
     font-size: 14px;
-    color: #ffffff;
+    color: #394269;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
@@ -646,7 +648,7 @@ a {
     -ms-box-shadow: 0 0 4px #000000;
     box-shadow: 0 0 4px #000000;
     font-size: 14px;
-    color: #ffffff;
+    color: #394269;
     text-shadow: #323232 1px 1px 1px;
 }
 
@@ -698,11 +700,11 @@ a {
 
 .status-menu-container.fixed {
     display: block;
-    width: 75%; /* if display:fixed, it's as if it doesn't have a parent */
+    width: 50%; /* if display:fixed, it's as if it doesn't have a parent */
     overflow:hidden;
     position: fixed;
-    right:12.5%;
-    left:12.5%;
+    /*right:12.5%; */
+    left:5%;
     top: 0;
 }
 
@@ -731,11 +733,11 @@ a {
     text-align: center;
     vertical-align: middle;
     font-size: 150%;
-    color:rgb(150,200,255);
+    color:#394269;
 }
 
 .status-menu-container .status-menu .status-button.on {
-    color:rgb(150,200,255);
+    color:#394269;
     font-weight: bold;
 }
 
@@ -743,7 +745,7 @@ a {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background-color:rgb(150,200,255);
+    background-color:rgb(255,255,255);
     display: block;
     width: 100%;
     height: 4px;
@@ -778,7 +780,7 @@ a {
     display: inline-block;
     height: 22px;
     margin-top: 15px;
-    color:rgb(150,200,255);
+    color: #394269;
     font-size: 1.6em;
     vertical-align: middle;
 }
@@ -811,8 +813,8 @@ a {
  * List Container - List Block
  */
 .list-block {
-    margin-top: 16px;
-    min-height: 600px;
+    margin-top: 0px;
+    min-height: 0px;
     padding: 0
 }
 
@@ -828,17 +830,19 @@ a {
 .list-unit .list-status-title {
     position: relative;
     display: table;
-    background-color:rgba(150,200,255,0);
+    background-color:rgba(255,255,255,0);
     width: 100%;
-    height: 38px;
+    height: auto;
 }
 
 .list-unit .list-status-title .text {
     display: table-cell;
-    width: 1024px;
-    height: 38px;
-    font-size: 2.0em;
-    color: #FFF;
+    width: 100%;
+    margin-top: 40%;
+    margin-bottom:40%;
+    /* height: 100%; */
+    font-size: 200%;
+    color: #394269;
     font-weight: bold;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     text-align: center;
@@ -854,7 +858,7 @@ a {
 
 .list-unit .list-status-title .stats a {
     margin-right: 8px;
-    color: #FFF;
+    color: #394269;
 }
 
 .list-unit .list-status-title .stats a.filterd {
@@ -867,7 +871,7 @@ a {
     width: 1024px;
     height: 30px;
     line-height: 30px;
-    color: #FFF;
+    color: #394269;
     text-align: center;
 }
 
@@ -887,7 +891,7 @@ a {
 /* turn off alternating colors for rows (comment out) */
 
 .list-table > tbody:nth-of-type(2n+1) {
-    background-color: rgba(150,200,255,0);
+    background-color: rgba(255,255,255,0);
 }
 
 
@@ -896,7 +900,7 @@ a {
  */
 
 .list-table .list-table-header .header-title {
-    background: rgba(150,200,255,0) url("/img/pc/ownlist/bar-table-header.png") no-repeat right 7px / 1px 22px;
+    background: rgba(255,255,255,0) url("/img/pc/ownlist/bar-table-header.png") no-repeat right 7px / 1px 22px;
     display: table-cell;
     border-bottom: #EBEBEB 1px solid;
     height: 36px;
@@ -980,14 +984,14 @@ a {
 
 .list-table .list-table-header .header-title .link {
     font-size: 11px;
-    color:white;
+    color: #394269;
     text-decoration: none
 }
 
 .list-table .list-table-header .header-title .link.sort {
     position: relative;
     display: inline-block;
-    color: white;
+    color: #394269;
     white-space: nowrap;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -1004,11 +1008,11 @@ a {
 }
 
 .list-table .list-table-header .header-title .link.sort:hover {
-    color: #2556c6
+    color: #394269;
 }
 
 .list-table .list-table-header .header-title .sort-icon {
-    color: #1d439b;
+    color: #394269;
 }
 
 
@@ -1030,21 +1034,21 @@ a {
 
 .list-table .list-table-data a.edit-disabled {
     cursor: text;
-    color: white;
+    color: #394269;
 }
 
 .list-table .list-table-data .tags .edit {
     display: block;
     width: 100%;
     text-align: center;
-    color: white;
+    color: #394269;
     text-decoration: none;
     font-size: 10px;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
 .list-table .list-table-data .tags .edit:hover {
-    color: green !important;
+    color: #394269;
 }
 
 .list-table .list-table-data .tags textarea {
@@ -1080,7 +1084,7 @@ a {
 }
 
 .list-table .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status {
-    color: #BABABA;
+    color: #394269;
     font-size: 0.9em
 }
 
@@ -1163,17 +1167,17 @@ a {
 
 .list-unit.completed, div#footer-block, .list-item, .list-table-data,
 .list-table-header{
-    background-color:rgba(150,200,255,0);
+    background-color:rgba(255,255,255,0);
 
 }
 
 #list-container.list-container{
-    background-color:rgba(150,200,255,0.5);
+    background-color:rgba(255,255,255,0.5);
 }
 
 .data.type, .data.progress, a{
     text-decoration: none;
-    color:white;
+    color: #394269;
 }
 
 a.icon-watch{
@@ -1182,13 +1186,13 @@ a.icon-watch{
 
 /* Change color of header text to baby blue */
 .header {
-    color:rgb(150,200,255);
+    color: #394269;
 }
 
 a.link.hover_info, div#copyright, th.header-title.number,
 td.data.number, th.header-title.tags, .add-edit-more,
 .header-title.started, .header-title.studio{
-    color:white;
+    color: #394269;
 }
 
 
@@ -1204,7 +1208,7 @@ td.data.number, th.header-title.tags, .add-edit-more,
     display: block !important;
     position: fixed;
     right: -20px !important;
-    top: 60px !important;
+    top: 10% !important;
     width: 192px;
     height: 272px;
     background-color: rgba(0,0,0,.3);
@@ -1243,7 +1247,7 @@ td.data.number, th.header-title.tags, .add-edit-more,
 /* Highlight the current row */
 .list-table-data:hover{
     transition: .2s linear;
-    background-color:rgba(150,200,255,0.8);
+    background-color:rgba(255,255,255,0.8);
 }
 
 .list-table-data{
