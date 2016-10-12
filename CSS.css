@@ -22,6 +22,7 @@
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     z-index: 1101;
 }
+
 #advanced-options .advanced-options-header {
     width: 750px;
     margin: 0px auto;
@@ -193,7 +194,7 @@
 
 #advanced-options .btn-apply,
 #advanced-options .btn-clear {
-    background-color: rgba(64, 101, 186, 1);
+    background-color:rgba(150,200,255,0.5);
     display: inline-block;
     width: 135px;
     margin: 0 4px;
@@ -218,7 +219,7 @@
 
 #advanced-options .btn-apply:hover,
 #advanced-options .btn-clear:hover {
-  background-color: rgba(64, 101, 186, 0.8);
+  background-color:rgba(150,200,255,0.5);
 }
 
 
@@ -235,7 +236,7 @@ body {
     background-size: cover;
 
     text-align: center;
-    font-family: Verdana, Arial;
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     font-size: 11px;
 }
 
@@ -252,7 +253,7 @@ a {
     padding: 15px 0;
     background-color: #2E51A2;
     color: #FFFFFF;
-    font-family: Avenir, "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
 }
 
 #copyright {
@@ -278,9 +279,10 @@ a {
     position: relative;
     color: #fff;
     display: block;
-    width: 1060px;
+    width: 75%;
+    margin-right: 12.5%; 
+    margin-left: 12.5%;
     height: 70px;
-    margin: 0 auto
 }
 
 .header .header-title {
@@ -340,7 +342,7 @@ a {
     display: block;
     width: 150px;
     height: 30px;
-    color: #2E51A2;
+    color: rgba(150,200,255,0.5);
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
@@ -359,12 +361,12 @@ a {
 }
 
 .header .header-menu .list-menu .icon-menu:hover {
-    background-color: #e1e7f5
+    background-color:rgba(150,200,255,0.5);
 }
 
 .header .header-menu .list-menu .icon-menu svg.icon {
     position: absolute;
-    fill: #2E51A2;
+    fill: rgba(150,200,255,0.5);
     left: 12px;
     top: 4px;
 }
@@ -546,6 +548,7 @@ a {
 
 .list-menu-float .icon-menu.setting .text .link-list-setting,
 .list-menu-float .icon-menu.setting .text .link-style-setting {
+    background-color:rgb(150,200,255);
     display: block;
     opacity: 0;
 }
@@ -553,8 +556,8 @@ a {
 .list-menu-float .icon-menu.setting:hover .text .link-list-setting,
 .list-menu-float .icon-menu.setting:hover .text .link-style-setting {
     position: absolute;
+    background-color:rgb(150,200,255);
     display: block;
-    background-color:rgba(150,200,255,0.8);
     width: 110px;
     height: 50px;
     line-height: 50px;
@@ -562,6 +565,7 @@ a {
     color: #ffffff;
     opacity: 1;
 }
+
 .list-menu-float .icon-menu.setting:hover .text .link-list-setting {
     top: 0px;
 }
@@ -580,10 +584,10 @@ a {
     position: relative;
     background-color: #ffffff;
     border: #EBEBEB 1px solid;
-    width: 1058px;
+    width: 75%;
     margin-bottom: 0;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 12.5%;
+    margin-left: 12.5%;
     text-align: left;
 }
 
@@ -592,7 +596,7 @@ a {
  */
 .cover-block {
     display: block;
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;
@@ -685,7 +689,7 @@ a {
 
  /* Header with All Anime, Currently Watching etc. (scrolls with page) */
 .status-menu-container {
-    width: 1058px;
+    width: 100%;
     height: 46px;
     background-color: #FFF;
     border-bottom: #EBEBEB 1px solid;
@@ -693,8 +697,12 @@ a {
 }
 
 .status-menu-container.fixed {
-    position: fixed;
     display: block;
+    width: 75%; /* if display:fixed, it's as if it doesn't have a parent */
+    overflow:hidden;
+    position: fixed;
+    right:12.5%;
+    left:12.5%;
     top: 0;
 }
 
@@ -704,22 +712,26 @@ a {
 
 .status-menu-container .status-menu {
     display: table;
-    margin: 0 auto;
+    /* margin: 0; */
     border-collapse: separate;
-    border-spacing: 40px 0;
+    width:100%;
+    height: 100%;
+    position: relative;
+    border-spacing:0;
 }
 
 .status-menu-container .status-menu .status-button {
     position: relative;
     display: table-cell;
-    padding: 12px 0;
+    padding: 0px 0;
+    /* width:auto; */
+    width:14.2%;
     margin: 0;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     text-align: center;
     vertical-align: middle;
-    font-size: 1.6em;
+    font-size: 150%;
     color:rgb(150,200,255);
-
 }
 
 .status-menu-container .status-menu .status-button.on {
@@ -807,7 +819,7 @@ a {
 .list-unit {
     display: block;
     margin: 0 auto;
-    width: 1024px
+    width: 100%;
 }
 
 /**
@@ -817,8 +829,8 @@ a {
     position: relative;
     display: table;
     background-color:rgba(150,200,255,0);
-    width: 1024px;
-    height: 38px
+    width: 100%;
+    height: 38px;
 }
 
 .list-unit .list-status-title .text {
@@ -830,7 +842,7 @@ a {
     font-weight: bold;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
     text-align: center;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .list-unit .list-status-title .stats {
@@ -1159,7 +1171,7 @@ a {
     background-color:rgba(150,200,255,0.5);
 }
 
-.header-title.started, .header-title.studio, .data.type, .data.progress, a{
+.data.type, .data.progress, a{
     text-decoration: none;
     color:white;
 }
@@ -1174,7 +1186,8 @@ a.icon-watch{
 }
 
 a.link.hover_info, div#copyright, th.header-title.number,
-td.data.number, th.header-title.tags, .add-edit-more{
+td.data.number, th.header-title.tags, .add-edit-more,
+.header-title.started, .header-title.studio{
     color:white;
 }
 
@@ -1184,111 +1197,6 @@ td.data.number, th.header-title.tags, .add-edit-more{
 /***********************************************************************
  * Side Animation (incomplete)
 ***********************************************************************/
-
-/*
-.list-table .list-table-data .data.tags {
-    background-color:rgba(150,200,255,0.5);
-     position: fixed;
-    right: 10px;
-    top:352px;
-    opacity: 0;
-display: inline !important;
-font-family: Segoe UI, Atilla, Arial, Helvetica, sans-serif;
-text-align:justify;
-width:200px;
-height:30px;
-border: 1px solid white;
-padding:0px;
-pointer-events: none;
-transition: opacity .3s linear;
-}
-
-.list-table .list-table-data:hover .data.tags {
- opacity: 1;
-}
-
-.list-table .list-table-header .header-title.tags {
-display:none;
-}
-
-
-.data.season:before{
-    content:"Season: ";
-    color: white;
-}
-
-
-.data.studio:before{
-    content:"Studio: ";
-    color: white;
-}
-
-.list-table .list-table-data .data.season {
-    background-color:rgba(150,200,255,0.5);
-     position: fixed;
-    right: 10px;
-    top:383px;
-    opacity: 0;
-display: inline !important;
-font-family: Segoe UI, Atilla, Arial, Helvetica, sans-serif;
-text-align:justify;
-width:200px;
-height:30px;
-border: 1px solid white;
-pointer-events: none;
-padding:0px;
-
-transition: opacity .3s linear;
-}
-
-.list-table .list-table-data:hover .data.season {
- opacity: 1;
-}
-
-.list-table .list-table-header .header-title.started {
-display:none;
-}
-
-.list-table .list-table-data .data.studio {
-    background-color:rgba(150,200,255,0.5);
-     position: fixed;
-    right: 10px;
-    top:414px;
-    opacity: 0;
-display: inline !important;
-font-family: Segoe UI, Atilla, Arial, Helvetica, sans-serif;
-text-align:justify;
-width:200px;
-height:30px;
-padding:0px;
-border: 1px solid white;
-pointer-events: none;
-
-transition: opacity .3s linear;
-}
-
-.list-table .list-table-data:hover .data.studio {
- opacity: 1;
-}
-
-.list-table .list-table-header .header-title.studio {
-display:none;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Display image of anime being hovered on at the right */
 .link.sort:after{
@@ -1341,4 +1249,5 @@ display:none;
 .list-table-data{
     border: 1px solid #ffffff;
 }
+
 
