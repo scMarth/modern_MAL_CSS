@@ -238,7 +238,7 @@ html, body{
 
 body {
     /* Background image */
-    background-image: url("http://i.imgur.com/BUH5woS.jpg");
+    background-image: url("http://i.imgur.com/xFHpVlw.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -296,11 +296,13 @@ a {
     width: 50%;
     margin-left:5%;
     height: 70px;
+    background-color: rgba(255,255,255,0.5);
 }
 
 .header .header-title {
     position: absolute;
     top: 21px;
+    left:4px;
     background-image: url("http://i.imgur.com/ZHlGEYs.png");
     background-position: left top;
     background-repeat: no-repeat;
@@ -1214,7 +1216,6 @@ tbody{
 /***********************************************************************
  * Custom Code
 ***********************************************************************/
-
 .list-unit.completed, div#footer-block, .list-item, .list-table-data,
 .list-table-header{
     background-color:rgba(255,255,255,0);
@@ -1239,13 +1240,15 @@ a.icon-watch{
     color: #394269;
 }
 
-a.link.hover_info, div#copyright, th.header-title.number,
+a.link.hover_info, th.header-title.number,
 td.data.number, th.header-title.tags, .add-edit-more,
 .header-title.started, .header-title.studio{
     color: #394269;
 }
 
-
+div#copyright {
+    color: white;
+}
 
 
 /***********************************************************************
