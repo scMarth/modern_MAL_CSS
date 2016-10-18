@@ -10,6 +10,15 @@ html, body{
    height: 100%;
 }
 
+html {
+    background-image: url("http://i.imgur.com/xFHpVlw.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
 #advanced-options {
     position: absolute;
     top: 24px;
@@ -238,11 +247,16 @@ html, body{
 
 body {
     /* Background image */
+
+    /*
     background-image: url("http://i.imgur.com/xFHpVlw.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    */
+
+    overflow: scroll;
 
     text-align: center;
     font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
@@ -399,7 +413,7 @@ a {
     position: fixed;
     display: block;
     top: 40%;
-    right:0;
+    right:18px; /* avoid scrollbar */
     width: 50px;
     border: #EBEBEB 1px solid;
     z-index: 2;
