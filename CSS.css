@@ -1243,7 +1243,8 @@ a.icon-watch{
 
 a.link.hover_info, th.header-title.number,
 td.data.number, th.header-title.tags, .add-edit-more,
-.header-title.started, .header-title.studio{
+.header-title.started, .header-title.studio,
+td.data.chapter, td.data.volume, td.data.priority{
     color: white;
 }
 
